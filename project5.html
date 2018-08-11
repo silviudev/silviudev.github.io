@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Silviu's Portfolio</title>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/template.css" />
+		<link rel="stylesheet" type="text/css" href="css/about.css" />
+	</head>
+
+	<body>
+		<!-- Navbar at the top -->
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="projects.html" class="active">Projects</a></li>
+			</ul>	
+		</nav>
+
+	<!-- Main content -->
+	<div id="outer">
+		<main>
+			<div id="img-center" class="img">
+				<img src="images/calculator.png" alt="Picture of project 5 - javascript calculator"/>
+			</div>
+
+			<h4>About Javascript Calculator</h4>
+
+			<p>
+			This is an online calculator that allows you to perform basic calculations such as addition, subtraction, multiplication, division, and square root. It works with both positive and negative numbers as well as decimals. It also has an "RND" button which rounds the currently displayed number to the nearest whole.
+			</p>
+
+			<p>
+			This calculator also has some unique functionality. The "FIB" button allows you to find the Nth <a href="https://en.wikipedia.org/wiki/Fibonacci_number" target="new">Fibonacci number</a>, with N being the number currently displayed on the screen. The program will not allow the user to perform this function with a number higher than ten million, as that might take too long and cause the browser to freeze.
+			</p>
+
+			<p>
+			The other special function this calculator has is the ability to find the Nth <a href="https://en.wikipedia.org/wiki/Prime_number" target = "new">prime number</a> using the "PRIM" button, where N is the currently displayed number. The program won't allow values higher than 100,000 for this, as that could take too long and may freeze the browser.
+			</p>
+			
+			<p>
+			I was surprised to find that large numbers are handled very nicely by Javascript's default Number type, so I didn't have to implement special functionality for numbers that don't fit in the 64-bit type. Javascript automatically uses the power of ten notation for very large numbers and even uses "Infinity" for numbers that are too large even for that, which I didn't know before and found very interesting. 
+			</p>
+
+			<a href="Javascript_Calculator/calculator.html" target="new">CLICK HERE TO USE THE CALCULATOR!</a>
+
+			<a href="projects.html">BACK TO PROJECTS</a>
+		</main>
+	</div>
+
+	<!-- Footer div -->
+		<footer>
+			&copy; Silviu Popovici 2017
+		</footer>
+	</body>
+
+</html>

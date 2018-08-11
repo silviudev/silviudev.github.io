@@ -1,0 +1,243 @@
+/*
+Table of Contents
+
+-General body styles
+-Header Styles
+-Nav styles
+-Main Content Styles
+-Footer Styles
+-Link Styles
+-Table Styles
+-Media Queries
+*/
+
+/*Body Styles*/
+
+html,body{
+	font-family: "Bree Serif", Serif;
+	font-size: 20px;
+	background-color: #D5DCE8;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+--Header Styles--
+*/
+h1,h2,h3{
+	text-align: center;
+}
+
+/*
+--Navigation Styles--
+Horizontal navbar at the top of the page - 4/10/17
+Added border - 5/1/17
+
+*/
+nav{
+	display: block;
+	height: 7%;
+	width: 99%;
+	background-color: #A6B3CB;
+	margin: 0 auto;
+	padding: 0.1rem;
+	text-align: center;
+	border-bottom: 2px solid black;
+}
+
+nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li{
+	display: inline-block;
+	color: #D5DCE8;
+	margin-left: 25px;
+	font-size: 1.5em;
+}
+
+nav ul li a{
+	text-decoration: none;
+}
+
+/*Hover pseudo element that turns the link light blue when hovering so the user knows
+which element is being hovered - 5/1/17*/
+nav a:hover{
+	color: #849ece;
+}
+
+/*Main Content Styles*/
+
+
+#img-left, #img-right{
+	width: 40%;
+	height: 40%;
+	display: inline-block;
+	background-color: #2D4571;
+	margin-left: 4%;
+	margin-top: 3%;
+	padding: 0;
+	border: 1px solid black;
+}
+
+#img-left img, #img-right img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#project-img-left, #project-img-right{
+	width: 30%;
+	height: 30%;
+	display: inline-block;
+	background-color: #2D4571;
+	margin-left: 12%;
+	padding: 0;
+	border: 1px solid black;
+	border-radius: 30px;
+	margin-bottom: 2%;
+	margin-top: 3%;
+}
+
+#project-img-right img, #project-img-left img{
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 30px;
+}
+
+/*
+--Main section Styles--
+Created a rectangular main section centered on the page with a blue Background - 4/10/17
+Added a border to distinguish the elements better -5/1/17
+*/
+#outer{
+	background-color: #50668F;
+	width:70%;
+	margin: 5px auto;
+	display: block;
+	border: 4px solid black;
+}
+
+main{
+	width: 95%;
+	background-color: #b6c5d8; /*old color was #50668F*/
+	margin: 10px auto 10px auto;
+	padding: 5px;
+	display: block;
+	border: 2px solid black;
+}
+
+main p{
+	display: inline-block;
+}
+
+/*
+--Footer Styles--
+Footer with a blue background, centered text - 4/10/17
+Added a border to make it stand out more - 5/1/17
+*/
+footer{
+	display: inline-block;
+	height:	9%;
+	width: 100%;
+	background-color: #A6B3CB;
+	margin: 1.5% auto 0px auto;
+  text-align: center;
+  font-size: 1.2em;
+  padding-top: 5px;
+  border-top: 1px solid black;
+}
+
+
+.active{
+	background-color: #50668F;
+}
+
+/*Link Styles*/
+
+/*4/24/17 - Overriding default link styles to look better and more in line with site theme. Uses the Visited pseudo element - 5/1/17*/
+a{
+	color: darkblue;
+	border-radius: 12%;
+	display: block;
+	margin-bottom: 5px;
+}
+
+a:visited{
+	color: darkblue;
+}
+
+p a{
+	display: inline-block;
+}
+
+/*Styling for the audio element to display it on its own line - 5/8/17*/
+audio{
+	display:block;
+	margin-bottom: 20px;
+}
+
+/*Make the address element fit within my intro paragraph - 5/8/17*/
+address{
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+/*Table styles for the table game on about page. 9X9 table that the user can click to change cell colors 5/8/17*/
+table{
+	border: 1px solid black;
+}
+
+th{
+	background-color: lightblue;
+}
+
+td{
+	cursor: pointer;
+}
+
+td, th{
+	border: 2px solid black;
+	width:60px;
+	height:40px;
+}
+
+/*Media Queries*/
+
+/*Turn everything into block display, add a Border to nav elements so they look better in vertical view -5/1/17*/
+@media screen and (max-width: 600px){
+	body{
+		font-size: 16px;
+	}
+	
+	nav{
+		height: 38%;
+	}
+
+	nav ul li{
+		display:block;
+		border: 2px solid black;
+	}
+
+	#img-left, #img-right{
+		display:block;
+		margin-left: 28%;
+	}
+
+	main{
+		height: 100%;
+	}
+
+	audio{
+		width: 180px;
+	}
+
+	footer, footer p, main p , #img-left img, #img-right img{
+		display: block;
+	}
+}

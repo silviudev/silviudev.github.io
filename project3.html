@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Silviu's Portfolio</title>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/template.css" />
+		<link rel="stylesheet" type="text/css" href="css/about.css" />
+	</head>
+
+	<body>
+		<!-- Navbar at the top -->
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="projects.html" class="active">Projects</a></li>
+			</ul>	
+		</nav>
+
+	<!-- Main content -->
+	<div id="outer">
+		<main>
+			<div id="img-center" class="img">
+				<img src="images/tictactoe.png" alt="Picture of project 3 - tic-tac-toe game"/>
+			</div>
+
+			<h4>About Tic Tac Toe</h4>
+
+			<p>
+			Tic-Tac-Toe is a classic game where a player has to mark three squares in a row with their letter to win. The two letters used are "X" for player 1 and "O" for player 2 and the computer. The 3 squares can be matched horizontally, vertically, or diagonally. "X" always goes first. You can play either against the computer or in two player mode, and you can mark a square by clicking it. When the game is over the game will highlight who won and give you the option to reset and play again.
+			</p>
+
+			<p>
+			I wrote this project entirely from scratch. For this one I didn't use a Canvas element. The squares are nine buttons contained within an HTML table. They all have event listeners attached and a function that handles the player's turn when a button is clicked. There are also many helper functions, including one for checking the different win conditions for both "X" and "O", one to check if the board is full, and one to handle the AI's turn. The game also uses media queries to be responsive and the table and squares get smaller when you minimize the window to keep the game looking good on smaller screens.
+			</p>
+
+			<p>
+			Click the link below to open the game in a new tab and play in your browser! Click on a game mode option at the start then click squares to mark them.
+			</p>
+
+			<a href="TicTacToe/main.html" target="new">CLICK HERE TO PLAY THE GAME!</a>
+
+			<a href="projects.html">BACK TO PROJECTS</a>
+		</main>
+	</div>
+
+	<!-- Footer div -->
+		<footer>
+			&copy; Silviu Popovici 2017
+		</footer>
+	</body>
+
+</html>

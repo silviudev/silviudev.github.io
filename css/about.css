@@ -1,0 +1,43 @@
+/*
+About me portfolio picture styles
+Wanted portfolio pic to be similar format to others except centered on the page 4/24/2017
+Set border radius for the profile pic to make rounded image - 5/1/2017
+*/
+h4{
+	margin: 0;
+	padding: 0;
+}
+
+#img-center{
+	width: 20%;
+	height: 30%;
+	display: block;
+	background-color: #2D4571;
+	margin-left: 39%;
+	margin-top: 3%;
+	border-radius: 37%;
+}
+
+#img-center img{
+	width:100%;
+	height:100%;
+	border-radius: 40%;
+}
+
+#figure{
+	height: 17%;
+	width: 17%;
+	margin-left: 41%;
+}
+
+figcaption{
+	font-size: 0.7em;
+	text-align: center;
+}
+
+/*Text element style for Span to make a large first letter effect 5/8/2017*/
+span{
+	font-size: 2.3em;
+	margin: 0;
+	padding:0;
+}
