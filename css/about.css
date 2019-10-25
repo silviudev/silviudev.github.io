@@ -3,9 +3,13 @@ About me portfolio picture styles
 Wanted portfolio pic to be similar format to others except centered on the page 4/24/2017
 Set border radius for the profile pic to make rounded image - 5/1/2017
 */
-h4{
-	margin: 0;
-	padding: 0;
+
+p{
+	margin: 2% 5%;
+} 
+
+table{
+	margin: 0 auto;
 }
 
 #img-center{

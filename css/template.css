@@ -71,6 +71,19 @@ nav a:hover{
 
 /*Main Content Styles*/
 
+p{
+	margin: 2% 5%;
+}
+
+aside{
+	margin: 2% auto;
+	text-align: center;
+}
+
+blockquote{
+	margin: 3% auto;
+	text-align: center;
+}
 
 #img-left, #img-right{
 	width: 40%;
